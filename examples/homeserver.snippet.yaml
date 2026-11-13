@@ -1,0 +1,10 @@
+# Merge this list item into homeserver.yaml; preserve any existing modules.
+modules:
+  - module: bridge_video_thumbnails.BridgeVideoThumbnails
+    config:
+      max_edge: 800
+      timeout_seconds: 15
+      concurrency: 2
+      max_video_bytes: 2147483648
+      only_appservice_users: false
+      ffmpeg: ffmpeg
